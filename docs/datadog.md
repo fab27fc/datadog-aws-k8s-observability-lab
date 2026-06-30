@@ -45,3 +45,4 @@ Datadog will collect metrics from two environments:
 ```text
 AWS CloudWatch Metrics ──► Datadog
 Local Kubernetes Cluster ──► Datadog Agent ──► Datadog
+```
