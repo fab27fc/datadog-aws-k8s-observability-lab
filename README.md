@@ -14,17 +14,16 @@ The lab includes:
 - Container logs
 - Basic dashboards and alerts
 
+## Objectives
+
 ## Architecture
 
-```text
-Datadog
- ├── AWS Integration
- │    ├── CloudWatch Metrics
- │    └── EC2 Monitoring
- │
- └── Local Kubernetes Cluster
-      ├── Datadog Agent
-      ├── Cluster Agent
-      ├── Pods
-      ├── Deployments
-      └── Container Logs
+## Technologies
+
+## Repository Structure
+
+## Prerequisites
+
+## Project Roadmap
+
+## Future Improvements
