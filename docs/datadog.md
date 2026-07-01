@@ -86,7 +86,39 @@ Metrics Collection
 5. Connect to your AWS account to monitor your cloud infrastructure
 
 # AWS Integration
+Your settings look correct:
+
+- CloudFormation
+- Region: us-east-1
+- Deploy log forwarder: OFF
+- Detect security issues: No
+
+Now click:
+
+* Open in AWS Console
+<img width="1360" height="641" alt="image" src="https://github.com/user-attachments/assets/dec143a9-e07d-4822-b4c4-0f43cc870d85" />
+
+Then, in the CloudFormation page:
+
+Leave all the generated values as they are.
+Do not choose an IAM Role for CloudFormation.
+Check both boxes at the bottom:
+- I acknowledge that AWS CloudFormation might create IAM resources...
+- I acknowledge CAPABILITY_AUTO_EXPAND.
+
+<img width="1337" height="210" alt="image" src="https://github.com/user-attachments/assets/5eb5b6a8-04d1-49a0-af30-15c2f3b83a01" />
+
+Click Create stack.
+Wait until the main stack DatadogIntegration reaches CREATE_COMPLETE.
+
 <img width="1271" height="970" alt="image" src="https://github.com/user-attachments/assets/ec73091b-86dc-4bd9-aa22-a3c61dbbc06d" />
+
+I will start to run CloudFront:
+<img width="1362" height="782" alt="image" src="https://github.com/user-attachments/assets/df66546d-d465-4c76-b296-f12d74f47a5a" />
+
+Integration has been completed:
+<img width="1102" height="787" alt="image" src="https://github.com/user-attachments/assets/3c738b5e-c9ad-452a-8b48-7b98368eb159" />
+
 
 
 ## Objective
@@ -114,9 +146,6 @@ The CloudFormation template creates:
 - Datadog AWS Integration
 - (Optional) Lambda Log Forwarder
 
-5.1 Open in AWS Console
-<img width="1360" height="641" alt="image" src="https://github.com/user-attachments/assets/dec143a9-e07d-4822-b4c4-0f43cc870d85" />
-
 ## CloudFormation Deployment
 
 Datadog provides an official AWS CloudFormation template that automates the deployment of the resources required for the AWS integration.
@@ -132,7 +161,7 @@ The template creates the IAM roles and permissions needed for Datadog to securel
 | Datadog Application Key | Allows the integration to access the Datadog API. |
 | Datadog Site | Specifies the Datadog site where the data will be sent. |
 
-<img width="1337" height="210" alt="image" src="https://github.com/user-attachments/assets/5eb5b6a8-04d1-49a0-af30-15c2f3b83a01" />
+
 
 Let's verify the integration directly in Datadog:
 
