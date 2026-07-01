@@ -134,8 +134,25 @@ The template creates the IAM roles and permissions needed for Datadog to securel
 
 <img width="1337" height="210" alt="image" src="https://github.com/user-attachments/assets/5eb5b6a8-04d1-49a0-af30-15c2f3b83a01" />
 
+Let's verify the integration directly in Datadog:
 
+Open the Datadog dashboard.
+Go to Integrations.
+Search for Amazon Web Services.
+Open the AWS integration page.
 
+I got a issue with the integration, however CloudFormation is good:
+
+<img width="1381" height="937" alt="image" src="https://github.com/user-attachments/assets/81ecac6c-d20d-4221-8ba7-91c58be79f97" />
+
+Everything I wanted to see is there:
+
+- DatadogIntegrationRoleStack
+- WorkflowStatusFunction
+- WorkflowStatusLambdaExecutionRole
+- All resources are CREATE_COMPLETE
+
+So CloudFormation completed successfully.
 
 
 
