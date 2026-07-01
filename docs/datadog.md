@@ -119,8 +119,6 @@ I will start to run CloudFront:
 Integration has been completed:
 <img width="1102" height="787" alt="image" src="https://github.com/user-attachments/assets/3c738b5e-c9ad-452a-8b48-7b98368eb159" />
 
-
-
 ## Objective
 
 Integrate an AWS account with Datadog to collect infrastructure metrics and monitor AWS resources.
