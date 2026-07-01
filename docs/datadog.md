@@ -103,9 +103,6 @@ Then, in the CloudFormation page:
 Leave all the generated values as they are.
 Do not choose an IAM Role for CloudFormation.
 Check both boxes at the bottom:
-- I acknowledge that AWS CloudFormation might create IAM resources...
-- I acknowledge CAPABILITY_AUTO_EXPAND.
-
 <img width="1337" height="210" alt="image" src="https://github.com/user-attachments/assets/5eb5b6a8-04d1-49a0-af30-15c2f3b83a01" />
 
 Click Create stack.
