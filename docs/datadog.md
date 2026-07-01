@@ -116,10 +116,6 @@ I will start to run CloudFront:
 Integration has been completed:
 <img width="1102" height="787" alt="image" src="https://github.com/user-attachments/assets/3c738b5e-c9ad-452a-8b48-7b98368eb159" />
 
-## Objective
-
-Integrate an AWS account with Datadog to collect infrastructure metrics and monitor AWS resources.
-
 ## Why use CloudFormation?
 
 Datadog provides an official CloudFormation template that automates the deployment of all AWS resources required for the integration.
@@ -158,25 +154,7 @@ The template creates the IAM roles and permissions needed for Datadog to securel
 
 
 
-Let's verify the integration directly in Datadog:
 
-Open the Datadog dashboard.
-Go to Integrations.
-Search for Amazon Web Services.
-Open the AWS integration page.
-
-I got a issue with the integration, however CloudFormation is good:
-
-<img width="1381" height="937" alt="image" src="https://github.com/user-attachments/assets/81ecac6c-d20d-4221-8ba7-91c58be79f97" />
-
-Everything I wanted to see is there:
-
-- DatadogIntegrationRoleStack
-- WorkflowStatusFunction
-- WorkflowStatusLambdaExecutionRole
-- All resources are CREATE_COMPLETE
-
-So CloudFormation completed successfully.
 
 
 
